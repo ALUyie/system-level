@@ -149,7 +149,6 @@ Step by Step Procedure
 
    .. figure:: EVAL-LTPA-LNAKIT_gain-selection-noise-example.png
       :align: center
-      :scale: 85%
 
       Noise Measurement Example with IN Clipping @ +60 dB Gain Setting
 
