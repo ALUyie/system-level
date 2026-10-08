@@ -20,11 +20,8 @@ amplifier response based on the performance of their DUT.
 
 .. figure:: EVAL-LTPA-LNAKIT_top-evaluation-board.png
     :align: center
-    :scale: 20%
 
     EVAL-LTPA-LNAKIT
-
-|
 
 The EVAL-LTPA-LNAKIT includes the following boards and accessories:
 
@@ -56,22 +53,18 @@ Typical Gain Profiles
    :widths: 50% 50%
 
    .. figure:: EVAL-LTPA-LNAKIT_30khz-gain-profile.png
-      :scale: 15%
 
       LNA Gain Profile @ 30 kHz Setting
 
    .. figure:: EVAL-LTPA-LNAKIT_100khz-gain-profile.png
-      :scale: 15%
 
       LNA Gain Profile @ 100 kHz Setting
 
    .. figure:: EVAL-LTPA-LNAKIT_1mhz-gain-profile.png
-      :scale: 15%
 
       LNA Gain Profile @ 1 MHz Setting
 
    .. figure:: EVAL-LTPA-LNAKIT_10mhz-gain-profile.png
-      :scale: 15%
 
       LNA Gain Profile @ 10 MHz Setting
 
@@ -81,11 +74,8 @@ Typical Application
 Figure 8 illustrates the basic hardware setup for performing noise measurements using
 the LTpowerAnalyzer™.
 
-|
-
 .. figure:: EVAL-LTPA-LNAKIT_hw-setup-noise.png
    :align: center
-   :scale: 18%
 
    LTpowerAnalyzer™ Noise Measurement Setup
 
@@ -102,53 +92,33 @@ Step by Step Procedure
 8. With the power off, connect the load to the output terminals of the DUT.
 9. Configure the settings of the DC power supply as needed and enable the output.
 
-|
-
 .. important::
 
    The type of load used in the setup can negatively affect the noise 
    measurements. Below is an example plot showing the difference with using a 4 Ohm
    resistive load, a Keysight E34243A electronic load, and the RL2000 efficiency meter
    current load.
-   
-   |
 
    For the best results, it is recommended to always use a resistive load.
 
-   |
-
    .. figure:: EVAL-LTPA-LNAKIT_noise-measurement-sw-loading.png
       :align: center
-      :scale: 80%
 
       Load Effects on Noise Measurements
-
-   |
-
-|
 
 10. Run the LTpowerAnalyzer™ software and click on the Noise Sweep tab.
 11. Configure the noise sweep parameters based on the test requirements for the DUT.
 12. Click on the Run button to initiate the measurement sweep.
 13. Click on the Analysis tab to view the integrated noise value. Adjust the start and stop freqeuncies as required.
 
-|
-
 .. note::
    The Noise Sweep can be run with 1, 2, 4, or 8 averages. Increasing the number of averages
    will slow down the sweep, but will also reduce variation.
 
-   |
-
    .. figure:: EVAL-LTPA-LNAKIT_noise-measurement-sw-averaging.png
       :align: center
-      :scale: 75%
 
       Noise Sweep Averaging
-
-   |
-
-|
 
 .. tip::
    The LTpowerAnalyzer™ Scope can be used to validate the integrated noise value.
@@ -157,15 +127,10 @@ Step by Step Procedure
    displayed in the Analysis tab as AC RMS LNA IN, which then can be compared to the
    integrated noise measurement in the Noise Sweep tab.
 
-   |
-
    .. figure:: EVAL-LTPA-LNAKIT_noise-measurement-sw-scope.png
       :align: center
-      :scale: 75%
 
       Scope Analysis of AC RMS Noise
-
-|
 
 .. important::
    When selecting the LNA gain setting, it is important to note that the IN port of
@@ -173,31 +138,20 @@ Step by Step Procedure
    output ripple of a switching power supply is relatively high, the amplified output
    of the LNA may exceed the limits of the main board, leading to bogus noise
    measurements.
-   
-   |
 
    Before starting any noise measurements, always check using the Scope
-   tab if the IN signal is clipping  and lower the gain to +30 dB if needed.  
-
-   |
+   tab if the IN signal is clipping  and lower the gain to +30 dB if needed.
 
    .. figure:: EVAL-LTPA-LNAKIT_gain-selection-scope-clipping-example.png
       :align: center
-      :scale: 90%
 
       Checking for IN Clipping Using the Scope Tab
-
-   | 
 
    .. figure:: EVAL-LTPA-LNAKIT_gain-selection-noise-example.png
       :align: center
       :scale: 85%
 
       Noise Measurement Example with IN Clipping @ +60 dB Gain Setting
-
-   |
-
-|
 
 Noise Sweep Interface Reference
 -------------------------------
@@ -207,14 +161,9 @@ Measurement Setup
 
 The Noise Sweep Measurement Setup is on the left side of the window.
 
-|
-
 .. figure:: EVAL-LTPA-LNAKIT_noise-measurement-sw-setup.png
-   :scale: 80%
 
    Noise Sweep Setup
-
-|
 
 .. list-table:: LNAmplifier Controls
    :widths: 20 80
@@ -231,8 +180,6 @@ The Noise Sweep Measurement Setup is on the left side of the window.
      
    * - Info
      - Displays information about the LNA (e.g., hardware and firmware versions, serial number, serial port, etc.).
-
-|
 
 .. list-table:: Sweep Settings
    :widths: 20 80
@@ -279,8 +226,6 @@ The Noise Sweep Measurement Setup is on the left side of the window.
 
    * - Append
      - Check this box to overlay succeeding sweep plots on top of the currently displayed data. When left unchecked, all previous graphs and data will be erased at the start of the next sweep.
-
-|
 
 .. list-table:: Plot Settings: X-Axis
    :widths: 20 80
@@ -332,8 +277,6 @@ The Noise Sweep Measurement Setup is on the left side of the window.
    * - Visible (Y2-Axis)
      - Toggles visibility for the Y2 axis.
 
-|
-
 Measurement Analysis
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -341,14 +284,9 @@ The Noise Sweep Measurement Analysis is on the right side of the window.
 The RMS integrated noise between the Start Frequency and Stop Frequency is
 calculated and displayed for each sweep.
 
-|
-
 .. figure:: EVAL-LTPA-LNAKIT_noise-measurement-sw-analysis.png
-   :scale: 76%
 
    Noise Sweep Analysis
-
-|
 
 .. list-table:: Noise Integration Settings
    :widths: 20 140
@@ -362,8 +300,6 @@ calculated and displayed for each sweep.
    
    * - Stop Frequency
      - Sets the highest frequency for integration.
-
-|
 
 Help and Support
 -----------------
